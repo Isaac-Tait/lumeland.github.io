@@ -17,6 +17,28 @@ deno run -A https://deno.land/x/lume/install.js
 ```
 
 Now you have the `lume` command.\
+
+<hr />
+
+Note: If you get an error message (on a linux machine) similar to: 
+
+```sh
+command not found: lume
+```
+
+Check your path by running
+```sh
+echo $PATH
+```
+
+The colon delimited list should have `user/local/.deno/bin:$PATH` if not you can easily add it by running: 
+
+```sh
+export PATH="/Users/yourUserName/.deno/bin:$PATH"
+```
+Now, after running `echo $PATH` you should see `.deno/bin` in your path list. 
+
+<hr />
 Once installed, you can update Lume to the latest version by running:
 
 ```sh
